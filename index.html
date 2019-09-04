@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Guillaume Berneau</title>
+<meta name="description" content="" />
+<meta name="theme-color" content="#837F7F" />
+<meta name="og:title" content="Guillaume Berneau" />
+<meta name="og:description" content="" />
+<meta name="og:type" content="website" />
+<meta name="og:site_name" content="Guillaume Berneau" />
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+<link rel="preload" href="assets/akzidenzGroteskBQ_lightOSF.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="assets/akzidenzGroteskBQ_lightOSF.woff2" as="font" type="font/woff2" crossorigin>
+
+<style>
+@font-face {font-family: 'Akzidenz-Grotesk BQ'; src: url('assets/akzidenzGroteskBQ_lightOSF.woff2') format('woff2'), url('assets/akzidenzGroteskBQ_lightOSF.woff') format('woff'); font-weight: 300; font-style: normal;}
+::-webkit-scrollbar {width: 0; height: 0; background-color: transparent;}
+::-webkit-scrollbar-button:end:increment,
+::-webkit-scrollbar-button:start:decrement {display: none;}
+::-webkit-scrollbar-track-piece {background: 0 0;}
+::-webkit-scrollbar-thumb {background: 0 0;}
+::-webkit-scrollbar-thumb:hover {background: 0 0;}
+::-webkit-selection {color: #fff; background-color: #837F7F;}
+::-moz-selection {color: #fff; background-color: #837F7F;}
+::-o-selection {color: #fff; background-color: #837F7F;}
+::-ms-selection {color: #fff; background-color: #837F7F;}
+::selection {color: #fff; background-color: #837F7F;}
+body {background: rgb(200, 200, 200); margin: 0; padding: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; scrollbar-width: none; -ms-overflow-style: none;}
+body * {font-family: 'Akzidenz-Grotesk BQ', Arial, Helvetica, sans-serif; font-size: 19px; line-height: 24px; font-weight: normal; text-decoration: none; color: rgb(135, 135, 135); outline: 0; margin: 0; padding: 0; list-style-type: none; box-sizing: border-box;}
+body header {position: fixed; z-index: 99; top: 0; width: 100%;}
+body header > div {max-width: 960px; margin: auto; padding: 6px 0; text-align: center;}
+body header > div h1 {display: inline;}
+body header > div a {color: #fff;}
+body section {position: fixed; top: 0; width: 100%; height: 100%; padding: 100px 0;}
+body section div {background-position: center center; background-repeat: no-repeat; background-size: contain; position: relative; display: block; height: 100%; cursor: e-resize;}
+@media only screen and (max-width: 767px) {
+  body section {
+    width: 90%;
+    left: 5%;
+  }
+}
+</style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>Guillaume Berneau</h1> (Nice,&nbsp;FR) &bullet; graphic&nbsp;designer &bullet; portfolio on&nbsp;request &bullet; berneauguillaume<!---->@<!---->gmail<!---->.<!---->com +33&nbsp;(0)&nbsp;6&nbsp;58&nbsp;76&nbsp;62&nbsp;97
+    </div>
+  </header>
+
+  <section class="slide">
+    <div style="background-image: url('images/1.jpg')"></div>
+    <div style="background-image: url('images/2.jpg')"></div>
+    <div style="background-image: url('images/3.jpg')"></div>
+    <div style="background-image: url('images/4.jpg')"></div>
+    <div style="background-image: url('images/5.jpg')"></div>
+    <div style="background-image: url('images/6.jpg')"></div>
+    <div style="background-image: url('images/7.jpg')"></div>
+    <div style="background-image: url('images/8.jpg')"></div>
+    <div style="background-image: url('images/9.jpg')"></div>
+    <div style="background-image: url('images/10.jpg')"></div>
+    <div style="background-image: url('images/11.jpg')"></div>
+    <div style="background-image: url('images/12.jpg')"></div>
+    <div style="background-image: url('images/13.jpg')"></div>
+  </section>
+
+<script src="assets/siema.min.js"></script>
+<script>
+  const slide = new Siema({
+    selector: '.slide',
+    duration: 0,
+    perPage: 1,
+    startIndex: 0,
+    draggable: false,
+    loop: true
+  })
+  document.querySelector('section').addEventListener('click', () => slide.next())
+  document.addEventListener('keydown', (e) => {
+    if (e.keyCode === 37) {
+      slide.prev()
+    }
+    else if (e.keyCode === 39) {
+      slide.next()
+    }
+  })
+</script>
+
+</body>
+</html>
