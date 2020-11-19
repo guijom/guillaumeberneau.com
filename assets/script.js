@@ -46,9 +46,6 @@ function initSlider() {
 
 // Init
 document.addEventListener('DOMContentLoaded', () => {
-	console.log('before init');
 	init();
-	console.log('after init, before initSlider');
 	initSlider();
-	console.log('after initSlider');
 });
