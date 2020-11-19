@@ -12,115 +12,98 @@
 <meta name="og:type" content="website" />
 <meta name="og:site_name" content="Guillaume Berneau" />
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<!-- <link rel="stylesheet" href="./assets/ism.css" media="all"> -->
+<link rel="stylesheet" href="./assets/style.css" media="all">
+<script async src="./assets/polyfill.min.js"></script>
 
-<link rel="preload" href="assets/Caracteres-L2.woff" as="font" type="font/woff" crossorigin>
-<link rel="preload" href="assets/Caracteres-L2.woff2" as="font" type="font/woff2" crossorigin>
- <link rel="preload" href="assets/ameliaregular.woff" as="font" type="font/woff" crossorigin>
-<link rel="preload" href="assets/ameliaregular.woff2" as="font" type="font/woff2" crossorigin>
-
-<style>
-@font-face {font-family: 'L2'; src: url('assets/Caracteres-L2.woff2') format('woff2'), url('assets/Caracteres-L2.woff') format('woff'); font-weight: 300; font-style: normal;}
-@font-face {font-family: 'amelia'; src: url('assets/ameliaregular.woff') format('woff'), url('assets/ameliaregular.woff2') format('woff2'); font-weight: 300; font-style: normal;}  
-
-::-webkit-scrollbar {width: 0; height: 0; background-color: transparent;}
-::-webkit-scrollbar-button:end:increment,
-::-webkit-scrollbar-button:start:decrement {display: none;}
-::-webkit-scrollbar-track-piece {background: 0 0;}
-::-webkit-scrollbar-thumb {background: 0 0;}
-::-webkit-scrollbar-thumb:hover {background: 0 0;}
-::-webkit-selection {color: #fff; background-color: #837F7F;}
-::-moz-selection {color: #fff; background-color: #837F7F;}
-::-o-selection {color: #fff; background-color: #837F7F;}
-::-ms-selection {color: #fff; background-color: #837F7F;}
-::selection {color: #fff; background-color: #837F7F;}
-body {background: rgb(200, 200, 200);margin: 0; padding: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; scrollbar-width: none; -ms-overflow-style: none;}
-body * {font-family: 'L2', Arial, Helvetica, sans-serif; font-size: 22px; line-height: 24px; font-weight: normal; text-decoration: none; color: rgb(135, 135, 135); outline: 0; margin: 0; padding: 0; list-style-type: none; box-sizing: border-box;}
-body header {position: fixed; z-index: 99; top: 0; width: 100%;}
-body header > div {max-width: 960px; margin: auto; padding: 6px 0; text-align: center; color: black;}
-body header > div h1 {display: inline;color: black;}
-body header > div a {font-size: 24px; font-family: 'amelia'; color: black;  text-decoration-line: underline; text-decoration-style: solid; text-decoration-color: #FF69B4; text-decoration-thickness: 2px;}
-body section {position: fixed; top: 0; width: 100%; height: 100%; padding: 100px 0;}
-body section div {background-position: center center; background-repeat: no-repeat; background-size: contain; position: relative; display: block; height: 100%; cursor: e-resize;}
-@media only screen and (max-width: 767px) {
-  body section {
-    width: 90%;
-    left: 5%;
-    padding-top: 124px;
-    padding-bottom: 24px;
-  } 
-  body section div { 
-    background-position:bottom;
-   } 
-}
-</style>
 </head>
 <body>
 
-  <header>
+<div id="header">
+  <h1>Guillaume Berneau</h1> &bullet;
+  <span>graphic&nbsp;designer</span> &bullet;
+  <span id="email"></span> &bullet;
+  <span id="phone"></span> &bullet;
+  <button id="info">i</button>
+  <div id="about">
     <div>
- &bullet; <h1>Guillaume Berneau</h1> &bullet; graphic&nbsp;designer &bullet; <a href="mailto:contact.berneauguillaume@gmail.com">CONTACT ME HERE</a> &bullet;<a>&nbsp;+33&nbsp;(0)&nbsp;6&nbsp;58&nbsp;76&nbsp;62&nbsp;97</a> </div>
+      <p>Guillaume Berneau (1993, Nice) is an independent graphic designer based in France. He graduated in 2019 with a Master of Arts (DNSEP) in Graphic Design from the Institut Supérieur des Arts de Toulouse.</p>
+      <p>Specialized in editorial design, posters and identities.</p>
+      <p><strong>Extended portfolio available upon request.</strong></p>
+    </div>
+  </div>
+</div>
 
-</header>
-  <section class="slide">
+<button id="prev" class="slider__button"></button>
+<button id="next" class="slider__button"></button>
 
-<div style="background-image: url('images/001.jpg')"></div>
-
-    <div style="background-image: url('images/32.jpg')"></div>
-      
-    <div style="background-image: url('images/29.jpg')"></div>
-    <div style="background-image: url('images/31.jpg')"></div>
-    <div style="background-image: url('images/19.jpg')"></div>
-    <div style="background-image: url('images/20.jpg')"></div>
-    <div style="background-image: url('images/21.jpg')"></div>
-    <div style="background-image: url('images/22.jpg')"></div>
-    <div style="background-image: url('images/23.jpg')"></div>
-    <div style="background-image: url('images/24.jpg')"></div>
-    <div style="background-image: url('images/25.jpg')"></div>
-    <div style="background-image: url('images/26.jpg')"></div>
-    <div style="background-image: url('images/27.jpg')"></div>
-     <div style="background-image: url('images/7.jpg')"></div>
-    <div style="background-image: url('images/1.jpg')"></div>
-    <div style="background-image: url('images/2.jpg')"></div>
-   
-    <div style="background-image: url('images/4.jpg')"></div>
-    <div style="background-image: url('images/5.jpg')"></div>
-    <div style="background-image: url('images/6.jpg')"></div>
-    <div style="background-image: url('images/8.jpg')"></div>
-    <div style="background-image: url('images/10.jpg')"></div>
-    <div style="background-image: url('images/11.jpg')"></div>
-   
-    <div style="background-image: url('images/13.jpg')"></div>
-    <div style="background-image: url('images/14.jpg')"></div>
-    <div style="background-image: url('images/15.jpg')"></div>
-    <div style="background-image: url('images/16.jpg')"></div>
-    <div style="background-image: url('images/17.jpg')"></div>
-
-    <div style="background-image: url('images/28.jpg')"></div>
-    
+<div id="slider">
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/001.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/32.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/29.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/31.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/19.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/20.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/21.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/22.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/23.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/24.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/25.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/26.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/27.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/7.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/1.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/2.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/4.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/5.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/6.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/8.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/10.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/11.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/13.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/14.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/15.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/16.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/17.jpg);"></div>
+  <div style="background-image: url(https://www.guillaumeberneau.com/images/28.jpg);"></div>
+</div>
   
-    
-  </section>
+<!-- <div class="ism-slider" data-transition_type="instant" data-radios="false" id="slider">
+  <ol>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/001.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/32.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/29.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/31.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/19.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/20.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/21.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/22.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/23.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/24.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/25.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/26.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/27.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/7.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/1.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/2.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/4.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/5.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/6.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/8.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/10.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/11.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/13.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/14.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/15.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/16.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/17.jpg);"></li>
+    <li style="background-image: url(https://www.guillaumeberneau.com/images/28.jpg);"></li>
+  </ol>
+</div> -->
 
-<script src="assets/siema.min.js"></script>
-<script>
-  const slide = new Siema({
-    selector: '.slide',
-    duration: 0,
-    perPage: 1,
-    startIndex: 0,
-    draggable: false,
-    loop: true
-  })
-  document.querySelector('section').addEventListener('click', () => slide.next())
-  document.addEventListener('keydown', (e) => {
-    if (e.keyCode === 37) {
-      slide.prev()
-    }
-    else if (e.keyCode === 39) {
-      slide.next()
-    }
-  })
-</script>
+<!-- <script src="./assets/ism-2.2.min.js"></script> -->
+<script src="./assets/siema.min.js"></script>
+<script src="./assets/script.js"></script>
 
 </body>
 </html>
