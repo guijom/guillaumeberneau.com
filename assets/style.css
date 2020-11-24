@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'newgoth';
+  font-family: 'newsgothicstd';
   src: url("/Font/NewsGothicStd.otf");
 }
 
@@ -62,7 +62,7 @@ body {
 	-ms-overflow-style: none;
 	background-color: #171616;
 	color: #fff;
-	font-family: 'newgoth', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-family: 'newsgothicstd', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	letter-spacing: -0.02px;
