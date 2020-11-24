@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "bell";
-  src: url("/Font/BellGothicStd-Bold.otf");
+  font-family: "din";
+  src: url("/Font/DINMittelschriftStd.otf");
 }
 
 
@@ -62,7 +62,7 @@ body {
 	-ms-overflow-style: none;
 	background-color: #171616;
 	color: #fff;
-	font-family: 'bell', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-family: 'din', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	letter-spacing: -0.02px;
