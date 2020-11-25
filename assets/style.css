@@ -206,7 +206,7 @@ color : #808080;
 .video-responsive { 
 	overflow:hidden; 
 	padding-bottom:10%; 
-	position:relative; 
+	position:center; 
 	height:0;
 }
 
